@@ -1,1 +1,60 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+.card {
+  width: 400px;
+  height: 550px;
+  border-radius: 5%;
+  margin: 10px;
+}
+
+.card .top-left-symbol,
+.card .bottom-right-symbol {
+  font-size: 120px;
+  font-family: "Arial", sans-serif;
+  position: absolute;
+}
+
+.card .top-left-symbol {
+  top: 10px;
+  left: 10px;
+}
+
+.card .bottom-right-symbol {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.card .center-symbol {
+  font-size: 200px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#refresh-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#refresh-button:hover {
+  background-color: #0056b3;
+}
